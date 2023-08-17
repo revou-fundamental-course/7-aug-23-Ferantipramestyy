@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Segitiga</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+    <h1>Kalkulator Segitiga</h1>
+    <h2> Menghitung Luas
+    <main class="luas">
+    <div class="imgkeliling">
+        <img src="assets/segitiga.png" alt="">
+    <!-- Rumus -->
+    <div class="rumus">
+        <h2> Rumus Luas : ½ x Alas x Tinggi</h2>
+    </div>
+    <!-- Rumus End -->
+    <label for="inputAlas">Alas:</label>
+    <input type="number" id="inputAlas">
+    <label for="inputTinggi">Tinggi:</label>
+    <input type="number" id="inputTinggi">
+    <p id="hasilluas"></p>
+    <button onclick="hitungLuas()">Hitung Luas</button>
+    <button onclick="resetInputs()">Reset</button>
+    </main>
+   
+    <h2> Menghitung Keliling
+    <main class="keliling">
+    <div class="imgkeliling">
+            <img src="assets/segitiga.png" alt="">
+    <!-- Rumus -->
+    <div class="rumus">
+        <h2> Rumus Keliling : Sisi1 + Sisi2 + Sisi3</h2>
+    </div>
+    <!-- Rumus End -->
+    <label for="inputSisi1">Sisi 1:</label>
+    <input type="number" id="inputSisi1">
+    <label for="inputSisi2">Sisi 2:</label>
+    <input type="number" id="inputSisi2">
+    <label for="inputSisi3">Sisi 3:</label>
+    <input type="number" id="inputSisi3">
+    <p id="hasilkeliling"> </p>
+    <button onclick="hitungKeliling()">Hitung Keliling</button> 
+    <button onclick="resetInputs()">Reset</button> 
+    </main>
+</div>
+
+<footer>
+    <div class="footer-content">
+      <p> created by Ferantipramesty | © 2023.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
